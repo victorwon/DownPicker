@@ -123,6 +123,8 @@
         self->textField.placeholder = self->placeholder;
     }
     self->textField.text = _previousSelectedString;
+    
+    [self sendActionsForControlEvents:(UIControlEvents)DownPickerEventCancelled];
 }
 
 

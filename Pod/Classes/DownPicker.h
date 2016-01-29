@@ -11,6 +11,8 @@
 
 #import <UIKit/UIKit.h>
 
+static NSUInteger DownPickerEventCancelled  =   0x00000001<<25;
+
 @interface DownPicker : UIControl<UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
 {
     UIPickerView* pickerView;
